@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4a6b7">
+  <link rel="icon" href="data:,">
+  <title>Happy 1st Anniversary, Chinnu Bava</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Playwrite+AU+QLD:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal-field" aria-hidden="true"></div>
+
+  <section class="login-screen" id="loginScreen" aria-label="Welcome">
+    <div class="login-glow"></div>
+    <div class="login-card">
+      <p class="eyebrow">a secret garden for two</p>
+      <div class="mini-heart" aria-hidden="true">♥</div>
+      <h1>A Little Surprise<br><em>For My Chinnu Bava</em> <span>💕</span></h1>
+      <p class="login-subtitle">Enter the secret to unlock our little world ❤️</p>
+      <form id="loginForm">
+        <label><span>Your sweet name</span><input id="username" type="text" placeholder="Chinnu Bava" autocomplete="off" required></label>
+        <label><span>Our secret code</span><input id="password" type="password" placeholder="Try: forever" required></label>
+        <button class="heart-button" type="submit"><span>Unlock our story</span><b>♥</b></button>
+        <p class="login-hint">Hint: our love has no expiry date ✨</p>
+        <p class="login-error" id="loginError" role="alert"></p>
+      </form>
+    </div>
+    <div class="login-stamp">made with all my heart<br><span>01 / forever</span></div>
+  </section>
+
+  <main class="site" id="site" aria-hidden="true">
+    <header class="topbar">
+      <a href="#home" class="brand" aria-label="Home"><span>♥</span> our little forever</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home <small>⌂</small></a>
+        <a href="#story">Our Story <small>♡</small></a>
+        <a href="#memories">Memories <small>▧</small></a>
+        <a href="#telugu">Telugu Love <small>ღ</small></a>
+        <a href="#cake">Cake <small>♨</small></a>
+        <a href="#kisses">Kisses <small>♡</small></a>
+        <a href="#letter">Love Letter <small>✦</small></a>
+        <button class="music-button" id="musicButton" type="button">🎵 <span>Our Song</span></button>
+      </nav>
+    </header>
+
+    <section class="hero section-pad" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">the sweetest chapter · 01</p>
+        <h2>Happy <span>1st</span><br>Anniversary</h2>
+        <p class="hero-name">My Dear Chinnu Bava <b>♥</b></p>
+        <p class="hero-note">One year of tiny moments, loud laughs,<br>and choosing you, every single day.</p>
+        <a class="pill-button" href="#story">Our Little Celebration <span>→</span></a>
+      </div>
+      <div class="hero-art reveal" aria-label="Original anime-inspired couple illustration">
+        <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="fairy-lights"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="character boy"><div class="hair"></div><div class="face"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><span class="smile">⌣</span></div><div class="body"></div><div class="arm hug-arm"></div></div>
+        <div class="character girl"><div class="hair"></div><div class="face"><i class="eye left"></i><i class="eye right"></i><i class="blush left"></i><i class="blush right"></i><span class="smile">⌣</span></div><div class="body"></div><div class="arm girl-arm"></div></div>
+        <div class="cake-small"><i class="candle c1"></i><i class="candle c2"></i><div class="tier top"></div><div class="tier bottom"></div></div>
+        <div class="hero-heart heart-a">♥</div><div class="hero-heart heart-b">♥</div><div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div>
+        <p class="art-caption">still falling for you<br><strong>every day</strong></p>
+      </div>
+      <div class="scroll-cue"><span></span>scroll to our story</div>
+    </section>
+
+    <section class="story section-pad" id="story">
+      <div class="section-intro reveal"><p class="eyebrow">a scene from our dream</p><h2>Love looks a little<br><em>like this.</em></h2><p>Two hearts, one warm sunset, and a thousand reasons to smile.</p></div>
+      <div class="celebration-scene reveal">
+        <div class="scene-sun"></div><div class="scene-moon">☾</div><div class="scene-hill hill-back"></div><div class="scene-hill hill-front"></div>
+        <div class="scene-lights"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="scene-couple"><div class="scene-boy">♥</div><div class="scene-girl">♥</div><div class="scene-hug"></div></div>
+        <div class="scene-cake"><span>1</span><i></i><i></i><div></div></div>
+        <div class="scene-flower flower-left">✿</div><div class="scene-flower flower-right">✿</div>
+      </div>
+    </section>
+
+    <section class="cake-section section-pad" id="cake">
+      <div class="cake-copy reveal"><p class="eyebrow">make a wish, my love</p><h2>One year of us…<br><em>and forever to go.</em> ♥</h2><p>Close your eyes, make a wish, and let’s celebrate every little thing that brought us here.</p><button class="pill-button dark" id="cutCake" type="button">Cut the Cake 🎂 <span>→</span></button><p class="cake-message" id="cakeMessage">Cheers to our first year together! 🥂❤️</p></div>
+      <div class="big-cake reveal" id="bigCake" role="button" tabindex="0" aria-label="Interactive anniversary cake"><div class="flame flame-one"></div><div class="flame flame-two"></div><div class="candle tall"></div><div class="candle short"></div><div class="cake-top">one year</div><div class="cake-middle"></div><div class="cake-bottom"></div><span class="cake-plate"></span></div>
+    </section>
+
+    <section class="telugu-section section-pad" id="telugu">
+      <div class="section-intro centered reveal"><p class="eyebrow">words from my heart</p><h2>మన ప్రేమ కథ <span>♥</span></h2><p>Every language becomes softer when it speaks of you.</p></div>
+      <div class="quote-grid">
+        <article class="quote-card reveal"><span>01</span><p>నీతో గడిపిన ప్రతి క్షణం నా జీవితంలో ఒక అందమైన జ్ఞాపకం ❤️</p></article>
+        <article class="quote-card reveal"><span>02</span><p>మన ప్రేమకు ఇది మొదటి సంవత్సరం మాత్రమే… మన కథకు అంతం లేదు. ❤️</p></article>
+        <article class="quote-card reveal"><span>03</span><p>నువ్వు నా జీవితంలోకి వచ్చిన రోజు నుంచి ప్రతి రోజు మరింత అందంగా మారింది.</p></article>
+        <article class="quote-card reveal"><span>04</span><p>నా నవ్వుకు కారణం నువ్వే… నా ఆనందానికి చిరునామా నువ్వే. ❤️</p></article>
+        <article class="quote-card reveal"><span>05</span><p>జీవితాంతం నీ చేయి పట్టుకుని నడవాలని కోరుకుంటున్నాను.</p></article>
+      </div>
+    </section>
+
+    <section class="memories section-pad" id="memories">
+      <div class="section-intro reveal"><p class="eyebrow">little things, big feelings</p><h2>Our Little<br><em>Love Story</em> 💕</h2><p>Leave room here for the photographs only we could take.</p></div>
+      <div class="timeline">
+        <article class="memory-card reveal"><div class="memory-photo"><span>add your photo</span><b>🌸</b></div><div><small>chapter one</small><h3>The Beginning 🌸</h3><p>Our story started with a beautiful moment…</p></div></article>
+        <article class="memory-card offset reveal"><div class="memory-photo"><span>add your photo</span><b>😊</b></div><div><small>chapter two</small><h3>Our Happy Days 😊</h3><p>Every little moment became a memory.</p></div></article>
+        <article class="memory-card reveal"><div class="memory-photo"><span>add your photo</span><b>💖</b></div><div><small>chapter three</small><h3>Our Special Moments 💖</h3><p>Some moments are impossible to forget.</p></div></article>
+        <article class="memory-card offset reveal"><div class="memory-photo"><span>add your photo</span><b>🎂</b></div><div><small>chapter four</small><h3>One Beautiful Year 🎂</h3><p>365 days of smiles, memories and love.</p></div></article>
+      </div>
+    </section>
+
+    <section class="kisses section-pad" id="kisses">
+      <div class="kiss-copy reveal"><p class="eyebrow">for immediate delivery</p><h2>Send Me<br><em>a Kiss</em> 💋</h2><p>A little button for whenever you miss me.</p><button class="kiss-button" id="kissButton" type="button">Kiss Me <span>💋</span></button><strong id="kissMessage">Mwaaahhh! 💋❤️</strong></div>
+      <div class="kiss-mail reveal"><div class="envelope"><span>♥</span></div><p>sealed with love<br><small>open anytime</small></p></div>
+      <div class="kiss-options"><button data-kisses="3" type="button">Tiny Kiss 💋</button><button data-kisses="6" type="button">Sweet Kiss 💕</button><button data-kisses="12" type="button">Infinite Kisses 💋💋💋</button></div>
+    </section>
+
+    <section class="letter-section section-pad" id="letter">
+      <div class="letter-wrap reveal"><div class="letter-flower">✿</div><p class="eyebrow">open when your heart needs a hug</p><h2>A Little Letter<br><em>For You</em> 💌</h2><div class="letter-paper"><p>నా ప్రియమైన Chinnu Bava,</p><p>మన మొదటి anniversary వచ్చేసింది అంటే నమ్మలేకపోతున్నాను. నీతో గడిపిన ప్రతి చిన్న క్షణం నాకు ఎంతో ప్రత్యేకం. నీ నవ్వు, నీ మాటలు, నీ ప్రేమ — ఇవన్నీ నా ప్రపంచాన్ని మరింత అందంగా చేశాయి.</p><p>ఇది మన ప్రేమ కథలో మొదటి సంవత్సరం మాత్రమే. ఇంకా ఎన్నో సంవత్సరాలు, ఎన్నో జ్ఞాపకాలు, ఎన్నో నవ్వులు, ఎన్నో చిన్న చిన్న గొడవలు, ఇంకా చాలా ప్రేమ మన కోసం ఎదురుచూస్తున్నాయి.</p><p>ఎప్పటికీ నీతోనే… ❤️</p><p class="signature">Happy First Anniversary,<br>My Dear Chinnu Bava! 💕</p></div></div>
+    </section>
+
+    <section class="finale section-pad" id="finale"><div class="fireworks" aria-hidden="true"></div><div class="finale-content reveal"><p class="eyebrow">to be continued</p><h2>One Year Down…<br><em>Forever To Go</em> ❤️</h2><p>Happy Anniversary, Chinnu Bava! 💋❤️</p><button class="pill-button light" id="surpriseButton" type="button">One More Surprise <span>♥</span></button><div class="surprise-message" id="surpriseMessage">I love you more than yesterday,<br>and I’ll love you even more tomorrow. ❤️</div></div><div class="finale-flowers">✿　❀　✿</div></section>
+    <footer>made for my favorite person · <span>01 → ∞</span></footer>
+  </main>
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
